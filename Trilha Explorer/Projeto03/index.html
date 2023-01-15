@@ -23,7 +23,7 @@
             <form id="formulario">
                 <h2>Informações do Evento</h2>
                 <label for="titulo">Titulo do evento <span>(mínimo 8 caracteres)</span></label>
-                <input type="text" name="titulo" id="titulo" required>
+                <input type="text" name="titulo" id="titulo" minlength="8" required>
                 <label for="link">Link do evento <span>(comece com https://)</span></label>
                 <input type="url" name="link" id="link" required>
                 <label for="telefone">Whatsapp para contato <span>(somente números)</span></label>
@@ -40,7 +40,7 @@
                 <label for="email">E-mail do administrador <span>(digite um e-mail válido)</span></label>
                 <input type="email" name="email" id="email" required>
                 <label for="senha">Senha de acesso para os participantes <span>(mínimo 8 caracteres)</span></label>
-                <input type="password" name="senha" id="senha" required>
+                <input type="password" name="senha" id="senha" minlength="8" required>
                 <div class="privado">
                     <input type="checkbox" name="privado" id="privado">
                     <label for="privado">Evento privado</label>
