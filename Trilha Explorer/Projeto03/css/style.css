@@ -161,6 +161,10 @@ main{
     cursor: pointer;
 }
 
+.botao button:hover{
+    background-color: #04b855;
+}
+
 @media (max-width: 600px){
     .main-container .hora{
         display: flex;
