@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.6em;
+    font-family: 'Mulish', sans-serif;
+    position: relative;
+    background: linear-gradient(180deg, rgba(227, 255, 248, 0) 82.08%, rgba(227, 255,248,0.45) 100%);
+}
+
+body img.balls{
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+}
+
+/* HEADER */
+
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
+    margin: 6rem auto;
+    flex-wrap: wrap;
+}
+
+.header-container ul{
+    display: flex;
+    gap: 4rem;
+    list-style: none;
+}
+
+.header-container a{
+    text-decoration: none;
+    opacity: 0.5;
+    color: #1f1534;
+    font-size: 1.6rem;
+}
+.header-container a:hover{
+    opacity: 1;
+    font-weight: bold;
+}
+
+/* MAIN */
+
+.main-container{
+    display: flex;
+    max-width: 1000px;
+    margin: 4rem auto;
+    justify-content: center;
+    align-items: center;
+    gap: 6rem;
+}
+
+.main-container h1{
+    font-weight: 400;
+    font-size: 5rem;
+    color: #1F1534;
+    margin-bottom: 4rem;
+}
+
+.main-container span{
+    font-weight: bold;
+    color: #89c5cc
+}
+
+.main-container p{
+    color: #7d7987;
+    margin: 0px 0px 1rem;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.4rem;
+}
+
+.main-container a{
+    color: white;
+    text-decoration: none;
+    background-color: #56c09b;
+    padding: 1.5rem 3rem;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.3rem;
+    gap: 1.5rem;
+    width: max-content;
+    margin-top: 5rem;
+}
+
+.main-container a:hover{
+    background-color: #69b99d;
+}
+
+.main-container img{
+    max-width: 100%;
+}
+
+/* FOOTER */
+
+.footer-container{
+    max-width: 1000px;
+    margin: 5rem auto 0px;
+    text-align: center;
+    padding: 2rem 2rem 5px;
+}
+
+.footer-container p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.4rem;
+}
+
+.footer-container p a{
+    text-decoration: none;
+    color: #1f1534;
+    font-weight: bold;
+}
+
+@media (max-width: 1050px) {
+    body{
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 750px) {
+    .main-container h1 {
+        font-size: 3rem;
+        margin-bottom: 3rem;
+    }
+
+    .header-container {
+        margin: 3rem auto;
+    }
+}
+
+@media (max-width: 500px) {
+    .main-container {
+        flex-direction: column;
+    }
+
+    .main-container .imagem {
+        order: -1;
+        max-width: 50%;
+    }
+}
+
+@media (max-width: 400px) {
+    .header-container {
+        flex-direction: column;
+    }
+}

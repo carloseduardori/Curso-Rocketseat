@@ -1,0 +1,170 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.6em;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+h1,h2,button{
+    font-family: 'Archivo', sans-serif;
+}
+
+h2, button{
+    font-weight: 600;
+}
+
+header{
+    background-color: #121214;
+    color: #fff;
+    padding: 2rem;
+}
+
+.header-container{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 8rem 0rem 4rem;
+}
+
+.header-container h1{
+    margin-bottom: 2rem;
+    font-size: 4rem;
+
+}
+
+.header-container h3{
+    color: #42d3ff;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+main{
+    background: rgb(229,229,229);
+    background: linear-gradient(0deg, rgba(229,229,229,1) 92%, rgba(18,18,20,1) 92%);
+    padding-bottom: 8rem;
+}
+
+.main-container{
+    background-color: #fafafc;
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.main-container form{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 5rem;
+}
+
+.main-container form h2{
+    padding: 2rem 0rem;
+    border-bottom: 1px solid #e6e6f0;
+    font-size: 2.5rem;
+}
+
+.main-container form h2.margin {
+    margin-top: 1.5rem;
+}
+
+.main-container form span{
+    color: #a9a7af;
+    font-size: 1.2rem;
+    margin-left: 1.2rem;
+}
+
+.main-container form span:hover{
+    color: #6c6a71;
+}
+
+.main-container form label{
+    color: #4e4958;
+    font-size: 1.4rem;
+    margin-top: 2rem;
+}
+
+.main-container form input{
+    border-radius: 8px;
+    border: 1px solid red;
+    padding: 2rem;
+    background-color: #fafafc;
+}
+
+.main-container form textarea, select{
+    border: 1px solid #e6e6f0;
+    border-radius: 8px;
+    padding: 2rem;
+    font-size: 1.6rem;
+    color: #6c6a71;
+    font-weight: 400;
+    background-color: #fafafc;
+}
+
+.main-container .privado input{
+    transform: scale(1.5);
+    margin: 2rem 1rem 0rem 0.5rem;
+}
+
+.main-container .hora{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: 0.3fr 1fr;
+    gap: 2rem;
+}
+
+.main-container .hora input#data{
+    grid-column: 1;
+}
+
+.main-container .hora input#hora-das{
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.main-container .hora input#hora-ate{
+    grid-column: 3;
+    grid-row: 2;
+}
+
+.main-container .hora label{
+    grid-row: 1;
+}
+
+.botao{
+    margin: 3rem 0px;
+    padding: 2rem 0rem 4rem;
+    background-color: #f0f0f4;
+    border-top: 1px solid #d6d6d6;
+    display: flex;
+    justify-content: center;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.botao button{
+    width: 90%;
+    padding: 2rem;
+    border: none;
+    color: #fff;
+    background-color: #04d361;
+    border-radius: 8px;
+    margin-top: 3rem;
+    font-size: 1.7rem;
+    cursor: pointer;
+}
+
+@media (max-width: 600px){
+    .main-container .hora{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
