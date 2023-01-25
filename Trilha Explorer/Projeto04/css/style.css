@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.6em;
+    font-family: "Epilogue", sans-serif;
+    background-color: #ECE9FD;
+}
+
+main{
+    margin: 8rem 15rem;
+}
+
+.container{
+    display: flex;
+    gap: 12rem;
+}
+
+.container .sobre{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    max-width: 500px;
+}
+
+.sobre h2{
+    color: #7158ef;
+    font-size: 1.6rem;
+    font-weight: 400;
+    letter-spacing: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.sobre h1{
+    color: #090039;
+    font-size: 4.2rem;
+    font-weight: 800;
+}
+
+.sobre p{
+    line-height: 3rem;
+    color: rgba(10, 0, 57, 0.64);
+    margin-bottom: 3rem;
+}
+
+.sobre a{
+    text-decoration: none;
+    color: #0d0152;
+}
+
+.sobre a:hover{
+    color: #090039;
+    font-weight: 700;
+}
+
+.container .informacoes{
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    max-width: 500px;
+    margin-top: 7.5rem;
+}
+
+.informacoes span{
+    font-weight: 700;
+    color: #090039;
+    font-size: 2.4rem;
+    display: flex;
+    align-items: center;
+}
+
+.informacoes strong{
+    font-size: 7.5rem;
+    margin-right: 4rem;
+    font-weight: 800;
+}
+
+@media (max-width: 1024px) {
+    main{
+        margin: 8rem 10rem;
+    }
+    .container {
+        gap: 10rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .container{
+        flex-wrap: wrap;
+        gap: 0rem;
+    }
+}
+
+@media (max-width: 500px) {
+    main{
+        margin: 6rem 4rem;
+    }
+}
